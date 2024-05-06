@@ -1,4 +1,4 @@
-#!usr/bin/env bash
+#!/usr/bin/env bash
 # Script sets up a seb server for the deplyiment of web_static
 #install nginx
 sudo apt update
