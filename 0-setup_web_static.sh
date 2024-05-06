@@ -21,6 +21,6 @@ echo "<html>
 #create symbolic link
 sudo ln -s -f /data/web_static/releases/test/ /data/web_static/current
 #change the ownere of the directory
-sudo chown -R ubunt:ubuntu /data/
+sudo chown -R ubuntu:ubuntu /data/
 
 sudo sed -i '/listen 80 default_server/a location /hbnb_static { alias /data/we_static/current/;}' /etc/nginx/sites-available/default
