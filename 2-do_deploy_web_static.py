@@ -11,10 +11,10 @@ from fabric.api import *
 
 
 def do_deploy(archive_path):
-    '''do_deploy distributes an archive fo a server
+    """do_deploy distributes an archive fo a server
     Args:
         archive_path: path to the archive file.
-    '''
+    """
 
     if not archive_path:
         return False
@@ -37,4 +37,3 @@ def do_deploy(archive_path):
                 #Create new symbolic link to the decompressed file
                 c.run('sudo ln -s /data/web_static/releases/{} /data/web_static/current'.format(archive_path))
     return True
-
