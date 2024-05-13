@@ -6,7 +6,7 @@ from fabric.api import *
 
 
 def do_deploy(archive_path):
-    '''Do_deply distributes an archive fo a server
+    '''Do_deploy distributes an archive fo a server
     Args:
         archive_path: path to the archive file.
     '''
