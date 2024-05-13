@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-'''Script distributes an archive file to a web server.'''
+"""
+Script distributes an archive file to a web server
+based on the file 1-pack_web_static.py.
+"""
+
+
 from fabric import Connection
 from datetime import datetime
 from fabric.api import *
