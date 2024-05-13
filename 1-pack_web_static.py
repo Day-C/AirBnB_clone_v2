@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # Fabric script to generate a .tgz archive.
+import os.path
 from datetime import datetime
 from fabric import Connection
 
