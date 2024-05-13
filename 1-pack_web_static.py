@@ -6,10 +6,9 @@ from fabric import Connection
 
 
 def do_pack(crt):
-    """
-    Do_pack compreses the content folder into a tar achive.
-    """
+    '''Do_pack function create a new package od our crt files.'''
+
     if crt:
-        return create
+        return (crt)
     else:
         return None
