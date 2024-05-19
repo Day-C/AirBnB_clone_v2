@@ -2,6 +2,7 @@
 '''Start a flsk web applicatoin.'''
 from flask import Flask
 
+
 app = Flask(__name__)
 app.config['STRICT_SLASHES'] = False
 
