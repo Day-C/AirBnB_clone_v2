@@ -1,14 +1,12 @@
 #!/usr/bin/python3
-'''Fabric script to generate a .tgz archive.'''
-
-
+# Fabric script to generate a .tgz archive.
 from datetime import datetime
 from fabric import Connection
 
 
 def do_pack():
     """
-    do_pack compreses the content folder into a tar achive.
+    Do_pack compreses the content folder into a tar achive.
     """
 
     with Connection(host='54.144.137.84', user='ubuntu') as c:

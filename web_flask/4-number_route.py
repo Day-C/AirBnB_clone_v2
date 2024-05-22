@@ -13,11 +13,13 @@ def hello():
 
     return "Hello HBNB!"
 
+
 @app.route('/hbnb')
 def hbnb():
     '''Display a name'''
 
     return 'HBNB'
+
 
 @app.route('/c/<text>')
 def name(text):
@@ -26,17 +28,20 @@ def name(text):
     text = text.replace('_', ' ')
     return f'C {text}'
 
+
 @app.route('/python/<test>')
 def pyth(text):
     '''Display a string.'''
 
     return f'Python {text}'
 
+
 @app.route('/number/<int:n>')
 def num_route(n):
     '''Display an integer.'''
 
     return f'{n} is a number'
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)
