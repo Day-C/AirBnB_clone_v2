@@ -44,6 +44,17 @@ def h1_page(n):
 
     return render_template('5-number.html', n=n)
 
+@app.route('/number_odd_or_even/<int:n>')
+def odd_or_Even(n):
+    '''Renders dynamic content based on input(even of odd).'''
+
+    n_status = ""
+    if n % 2 == 0:
+        n_status = "is even"
+    else:
+        n_status = "is odd"
+
+    return render_template('6-number_odd_or_even.html', n=n, status=n_status)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000)

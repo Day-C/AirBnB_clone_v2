@@ -75,3 +75,8 @@ class FileStorage:
                     break
             #save the rest
             self.save()
+
+    def close(self):
+        "Decerialize json file to objects."""
+
+        self.reload{}
